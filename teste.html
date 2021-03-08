@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="teste.css">
+  </head>
+  <body>
+
+  <nav id="menu">
+    <a href="#slide1">Section 1</a>
+    <a href="#slide2">Section 2</a>
+    <a href="#slide3">Section 3</a>
+  </nav>
+
+  <div id="slide1" class="page" data-x="0" data-y="0">
+    <h1>Section 1</h1>
+  </div>
+  <div id="slide2" class="page" data-x="1" data-y="1">
+    <h1>Section 2</h1>
+  </div>
+  <div id="slide3" class="page" data-x="2" data-y="2">
+    <h1>Section 3</h1>
+  </div>
+
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/simple-ascensor.js"></script>
+  <script type="text/javascript">
+      $('#menu a').simpleAscensor(750);
+  </script>
+  </body>
+</html>

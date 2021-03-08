@@ -1,0 +1,181 @@
+body
+{
+  text-align: center;
+  background-color: #D1DEDE;
+}
+
+#buy_button
+{
+  display: none;
+}
+
+.btn-group
+{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#company_logo
+{
+  font-size: 15rem;
+  color: #F64740;
+}
+.col
+{
+  width: 40%;
+  position: relative;
+  left: 30%;
+}
+
+.col_product_page
+{
+  width: 80%;
+  height: 90%;
+  position: relative;
+  left: 10%;
+}
+
+#div_camisa
+{
+  display: none;
+}
+
+#div_short
+{
+  display: none;
+}
+
+#div_sapato
+{
+  display: none;
+}
+
+#div_teste2
+{
+
+}
+
+.fa
+{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.fa:hover
+{
+  color: black;
+}
+
+.home-box
+{
+  width: 100%
+}
+
+.home-box-image{
+  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.home-box-text
+{
+  position: relative;
+  bottom: 15rem;
+  left: 30rem;
+  text-align: left;
+  width: 35%
+}
+
+#home-div
+{
+  /* IDEA:
+  filter: opacity(0);
+  height: 0px; */
+}
+
+#home_description
+{
+  text-align: center;
+  position: relative;
+  left: 15%;
+}
+
+.icon_anchor
+{
+  color: gray;
+}
+
+#products_div{
+  display: none;
+
+  /* IDEA:
+
+   */
+}
+
+#product_div_first_product_image
+{
+
+  /* IDEA:
+  height: 20rem;
+
+   */
+}
+#product_div_add_cart_button
+{
+display: none;
+}
+
+#product_page
+{
+  display: none;
+
+  /* IDEA:
+
+   */
+}
+#product_page_image
+{
+
+  /* IDEA:
+  position: relative;
+  right: 30%;rem;
+  height: 30rem;
+
+
+   */
+}
+#product_page_title
+{
+
+  /* IDEA:
+  position: relative;
+  width: 30%;
+  left: 35%;
+  bottom: 25rem;
+
+
+   */
+}
+#product_page_description
+{
+
+  /* IDEA:
+  position: relative;
+  width: 30%;
+  left: 35%;
+  bottom: 25rem;
+
+
+   */
+
+}
+#product_page_add_cart_button
+{
+  display: none;
+}
+
+#store_image
+{
+  position: relative;
+  left: 80%;
+}

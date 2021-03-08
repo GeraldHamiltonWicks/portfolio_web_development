@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+      <button type="button" onclick="home_page()" class="btn btn-outline-secondary">Home</button>
+      <button id="teste" type="button" onclick="display_camisa_page()" class="btn btn-outline-secondary">T-shirts</button>
+      <button type="button" onclick="display_short_page()" class="products_btn btn btn-outline-secondary">Shorts</button>
+      <button type="button" onclick="display_sapato_page()" class="products_btn btn btn-outline-secondary">Shoes</button>
+      <button id="carrinho_anchor_title" type="button" onclick="display_carrinho_page()" class="btn btn-outline-secondary">🛒 Cart (0)</button>
+    </div>
+
+    <div id="home-div">
+      <h1 id="home_title">Company Name</h1>
+
+        <div class="home-box">
+          <div class="home-box-image">
+            <img src="images/wardrobe_image.png" alt="">
+            </div>
+          <div class="home-box-text">
+            <p id="home_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <div class="home-box-image">
+            <p id="home_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            </div>
+          <div class="home-box-text">
+          <img id="store_image" src="images/store_image.png" alt="">
+          </div>
+        </div>
+
+
+
+    </div> <!-- end home-div -->
+
+
+    <div id="products_div">
+      <h1 id="product_div_title"></h1>
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 id="product_div_first_product_title"class="my-0 fw-normal">Price and products: </h4>
+        </div>
+        <div class="card-body">
+          <img id="product_div_first_product_image" src="">
+          <h1 id="product_div_first_product_price" class="card-title pricing-card-title">$ 0</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li id="product_div_first_product_description0"></li>
+            <li id="product_div_first_product_description1"></li>
+            <li id="product_div_first_product_description2"></li>
+            <li id="product_div_first_product_description3"></li>
+            <li id="product_div_first_product_description4"></li>
+            <li id="product_div_first_product_description5"></li>
+            <li id="product_div_first_product_description6"></li>
+            <li id="product_div_first_product_description7"></li>
+            <li id="product_div_first_product_description8"></li>
+            <li id="product_div_first_product_description9"></li>
+          </ul>
+          <button onclick="add_product_to_cart()" id="product_div_add_cart_button" type="button" class="btn btn-outline-secondary"></button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div id="div_camisa">
+      <h1>T-shirts</h1>
+      <p>The bests T-shirts to your day</p>
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">White T-shirt</h4>
+        </div>
+        <div class="card-body">
+          <img src="images/camisa_branca.jpg">
+          <h1 class="card-title pricing-card-title">$ 15</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>100% Cotton</li>
+          </ul>
+          <button onclick="camisa_buy_button1()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Black T-shirt</h4>
+        </div>
+        <div class="card-body">
+          <img src="images/camisa_preta.jpg">
+          <h1 class="card-title pricing-card-title">$ 20</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>100% Cotton</li>
+          </ul>
+          <button onclick="camisa_buy_button2()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Yellow T-shirt</h4>
+        </div>
+        <div class="card-body">
+          <img src="images/camisa_amarela.jpg">
+          <h1 class="card-title pricing-card-title">$ 25</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li >100% Cotton</li>
+          </ul>
+          <button onclick="camisa_buy_button3()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- IDEA: fim do div-camisa -->
+
+
+    <div id="div_short">
+      <h1>Shorts</h1>
+      <p>The bests shorts to your day routine</p>
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Black Short</h4>
+        </div>
+        <div class="card-body">
+          <img src="images/short_preto.jpg">
+          <h1 class="card-title pricing-card-title">$ 25</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Confortable and light</li>
+          </ul>
+          <button onclick="short_buy_button1()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Blue Short</h4>
+        </div>
+        <div class="card-body">
+          <img src="images/short_azul.jpg">
+          <h1 class="card-title pricing-card-title">$ 30</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Excellent to do exercises</li>
+          </ul>
+          <button onclick="short_buy_button2()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Green Short</h4>
+        </div>
+        <div class="card-body">
+          <img src="images/short_verde.jpg">
+          <h1 class="card-title pricing-card-title">$ 35</h1>
+
+          <button onclick="short_buy_button3()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- IDEA: fim do div-short -->
+
+
+  <div id="div_sapato">
+    <h1>Shoes</h1>
+    <p>The cheapest shoes you find here</p>
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 fw-normal">Green Shoes</h4>
+      </div>
+      <div class="card-body">
+        <img src="images/sapato_verde.jpg">
+        <h1 class="card-title pricing-card-title">$ 3</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Light and confortable</li>
+        </ul>
+        <button onclick="sapato_buy_button1()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 fw-normal">Black Shoes</h4>
+      </div>
+      <div class="card-body">
+        <img src="images/sapato_preto.jpg">
+        <h1 class="card-title pricing-card-title">$ 5</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Confortable</li>
+        </ul>
+        <button onclick="sapato_buy_button2()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 fw-normal">White Shoes</h4>
+      </div>
+      <div class="card-body">
+        <img src="images/sapato_branco.jpg">
+        <h1 class="card-title pricing-card-title">$ 7</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li >Well built</li>
+        </ul>
+        <button onclick="sapato_buy_button3()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 fw-normal">Yellow Shoes</h4>
+      </div>
+      <div class="card-body">
+        <img src="images/sapato_amarelo.jpg">
+        <h1 class="card-title pricing-card-title">$ 9</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li >Light and confortable</li>
+        </ul>
+        <button onclick="sapato_buy_button4()" type="button" class="btn btn-outline-secondary">Add to Cart 🛒</button>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <!-- IDEA: fim div_sapato -->
+
+
+    <div id="cart_page">
+            <a id="buy_button" href=""  class="btn btn-outline-dark" href="#" role="button"></a>
+    </div>
+
+
+
+<hr>
+  <footer class="container py-5">
+    <a class="icon_anchor" href="https://www.facebook.com">  <i class="fa fa-facebook-official fa-4x"></i></a>
+    <a class="icon_anchor" href="https://www.instagram.com">  <i class="fa fa fa-instagram fa-4x"></i></a>
+  </footer>
+
+  <div>Icons made by <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="constants.js" type="text/javascript"></script>
+<script src="home.js" type="text/javascript"></script>
+<script src="camisa.js" type="text/javascript"></script>
+<script src="carrinho.js" type="text/javascript"></script>
+<script src="sapato.js" type="text/javascript"></script>
+<script src="short.js" type="text/javascript"></script>
+  </body>
+</html>
