@@ -1,0 +1,63 @@
+@mixin nav_icons_function($var_color)
+{
+    color: $var_color;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+
+.home_icon
+{
+    @include nav_icons_function(rgb(85, 221, 101));
+}
+
+.product_icon
+{
+    @include nav_icons_function(rgb(5, 7, 5));
+}
+
+.localition_icon
+{
+    @include nav_icons_function(rgb(207, 73, 73));
+}
+
+.contact_icon
+{
+    @include nav_icons_function(rgb(0, 109, 199));
+}
+
+.nav_bar
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid rgb(34, 34, 34);
+    overflow: hidden;
+   
+
+    a{
+        color: rgb(66, 65, 65);
+        border-bottom: 2px solid white;   
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 1%;
+        font-family: 'Montserrat', 'sans-serif';
+        font-weight: 500;
+        text-decoration: none;
+        &:hover
+        {
+            font-weight: 900;
+            color: black;
+            border-bottom: 2px solid rgb(66, 65, 65);
+            
+            .nav_icon{
+                opacity: 1;
+            }
+        }
+    }
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
